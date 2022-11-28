@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Thanks for Survey</h1>
+
+<p>
+    Your Name: @ViewBag.Name
+</p>
+<p>
+    Your Gender: @ViewBag.Gender
+</p>
+
+<p>
+    Hobbies:
+    <ul>
+        @foreach(var item in ViewBag.Hobbies)
+        {
+        <li>
+            @item
+        </li>
+        }
+
+    </ul>
+</p>
+<p>
+    Add in Survey : @ViewBag.Option
+</p>
+

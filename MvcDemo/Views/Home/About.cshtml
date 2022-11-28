@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>About</h1>
+<p>this is about page</p>
+
+<body>
+
+<form action="ContacUs.cshtml">
+   <label>Enter user name: </label>
+    <input type="text" id="un"/>
+    <br/>
+    <label>Enter user Email: </label>
+    <input type="email" id="ue"/>
+    <br/>
+    <label>Enter user password: </label>
+    <input type="password" id="upsw"/>
+    <br/>
+    <label>Enter user phoneNo: </label>
+    <input type="number" id="uph"/>
+    <br/>
+    <label>>Enter user gender: </label>
+    <input type="radio" id="ug1" name="gender"/>female
+    <input type="radio" id="ug2" name="gender"/>male
+     <br/>
+     <input type="submit" onclick="save()" value="Save"/>
+     <input type="submit" onclick="reset()" value="Reset"/>
+</form>
+</body>

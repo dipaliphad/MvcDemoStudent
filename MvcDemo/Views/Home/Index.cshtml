@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>This is my First MVC apllication</h1>
+<p>
+    @ViewData["message"]
+</p>
+<p>
+    @ViewData["name"]
+</p>
+<p>
+    @ViewData["per"]
+</p>
+<p>
+    <ul>
+        @foreach(string item in (IEnumerable<string>)ViewData["colors"])
+            {
+                <li>
+                    @item
+                </li>
+            }
+    </ul>
+</p>
+<h3>use of ViewBag</h3>
+<p>
+    @ViewBag.UserName,@ViewBag.Email
+</p>
+<p>
+<ul>
+     @foreach(string item in ViewBag.Colors)
+    {
+        <li>
+            @item
+        </li>
+    }
+</ul>
+</p>

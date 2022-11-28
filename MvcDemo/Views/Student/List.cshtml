@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1> Student List</h1>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Stud Id</th>
+        <th>Stud Name</th>
+        <th>std</th>
+        <th>Percentage</th>
+    </tr>
+    @foreach(Student s in (IEnumerable<Student>)ViewData["studlist"])
+    {
+    <tr>
+         <th>@s.Id</th>
+        <th>@s.Name</th>
+        <th>@s.std</th>
+        <th>@s.Percentage</th>h>
+    </tr>
+    }
+</table>
+@*<h3>Using Viwe Bag</h3>
+<table class="table table-bordered">
+    <tr>
+         <th>Stud Id</th>
+        <th>Stud Name</th>
+        <th>std</th>
+        <th>Percentage</th>
+    </tr>
+    @foreach(Student s in ViewBag.StudList)
+    {
+         <tr>
+          <th>Stud Id</th>
+        <th>Stud Name</th>
+        <th>std</th>
+        <th>Percentage</th>
+    </tr>
+    }
+</table>
+*@

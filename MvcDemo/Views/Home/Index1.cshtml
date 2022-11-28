@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<p>
+    <ul>
+        @foreach (string  item in (IEnumerable<string>)ViewData["colors"])
+       {
+           <li>
+               @item
+           </li>
+       }
+    </ul>
+</p>
+<h3>Use of ViewBag </h3>
+<p>
+    @ViewBag.UserName,@ViewBag.Email
+</p>
+<p>
+    <ul>
+        @foreach(string item in ViewBag.Colors)
+        {
+            <li>
+                @item
+            </li>
+        }
+    </ul>
+</p>

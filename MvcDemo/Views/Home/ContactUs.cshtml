@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "ContactUs";
+}
+
+<h1>ContactUs</h1>
+
+@*<body>
+  <label> Enter User Email:</label>
+   <input type="email" id="un"/>
+   <br/>
+   <label> Enter User Password:</label>
+  <input type="password" id="psw"/>
+  <br/>
+   <input type="submit" onclick="login()" value="Login"/>
+</body>*@
+
+@using (Html.BeginForm()){
+    <p>
+        Enter Name : <input type="text" id="fname" name="fname"/>
+    </p>
+    <p>
+        Enter Name : @Html.TextBox("fname")
+    </p>
+
+    <p>
+        <input type="radio" name="Gender" value="Male"/>Male
+         <input type="radio" name="Gender" value="Female"/>Female
+
+         Select Gender:
+         @Html.RadioButton("Gender","Male")Male
+         @Html.RadioButton("Gender","Female")Female
+    </p>
+    <p>
+        select Hobbies:
+        @Html.CheckBox("Hobbies","music")music
+        @Html.CheckBox("Hobbies","sport")sport
+        @Html.CheckBox("Hobbies","study")study
+
+
+    </p>
+}
